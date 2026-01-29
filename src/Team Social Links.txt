@@ -1,0 +1,25 @@
+
+Srno. 	Name 	Linkdin	Email		
+1	Keshar Anil Shinde	https://www.linkedin.com/in/keshar-shinde-ba13182b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	kesharshindemech111@gmail.com		
+2	Ritesh Santosh Rajput		rajputritesh2053@gmail.com		
+3	Shantanu Rajendra Thange	http://linkedin.com/in/shantanuthange	shantanuthange5@gmail.com		
+4	Dhruv Narendra Inamke	https://www.linkedin.com/in/dhruv-inamke-45629728a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	dhruvinamke911@gmail.com		
+5	Abhishek Sagar Nale	https://www.linkedin.com/in/abhishek-nale-711490289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	abhisheknale9657@gmail.com		
+6	Omprakash Annasaheb Pawar 	https://www.linkedin.com/in/omprakash-pawar-bb54b9258	pawaromprakash11@gmail.com		
+7	Bhushan Machhindra Pawar	https://www.linkedin.com/in/bhushan-pawar-838160326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	bhushanpawar1289@gmail.com		
+8	Kaushik Narayan Barahate	https://www.linkedin.com/in/kaushik-barhate-234b81288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	kaushikbarhate@gmail.com		
+9	Vedant Rindhe	https://www.linkedin.com/in/vedant-rindhe-8b1034241	rindhevedant@gmail.com		
+10	Atharva Sathe	https://www.linkedin.com/in/atharva-sathe-157640288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	satheatharva105@gmail.com		
+11	Tejas Yogesh Sonawane	https://www.linkedin.com/in/tejas-sonawane-3bb8202b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	tejassonawane1940@gmail.com		
+12	Pratik Sudhakar Jagtap	www.linkedin.com/in/pratik-jagtap-40937832b	pratik002pj@gmail.com		
+13	Saiayush Sudam Ugale	https://www.linkedin.com/in/saiayush-ugale-341b2135a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	saiayushugale37@gmail.com		
+14	Vishal Kadam	https://www.linkedin.com/in/vishal-kadam-b47545328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	kadampatil9765@gmail.com		
+15	Prathamesh Prabhakar Chine	http://www.linkedin.com/in/prathamesh-chine	prathameshchine06@gmail.com		
+16	Atharva Sandeep Karkhile	https://www.linkedin.com/in/atharv-karkhile-971a72385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app			
+17	Nishita Malviya	https://www.linkedin.com/in/nishita-malviya-53a798330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	nishitavmalviya14@gmail.com		
+18	Shraddha Shirole	https://www.linkedin.com/in/shraddha-shirole-28474832a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	shraddhashirole24@gmail.com		
+19	Sanika Wakchaure	https://www.linkedin.com/in/sanika-wakchaure-5222733a4?utm_source=share_via&utm_content=profile&utm_medium=member_android	sanikawakchaure04@gmail.com		
+20	Pranjali Jejurkar	https://www.linkedin.com/in/pranjali-jejurkar-96306732b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	pranjalijejurkar26@gmail.com		
+21	Dr.S.S.Ingle	https://www.linkedin.com/in/sumedh-ingle-70ba3528?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	inglesumedhmech@sanjivani.org.in		
+22	Dr.P.M.Patare	https://www.linkedin.com/in/dr-prasad-patare-6b042114?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app	patareprasadmech@sanjivani.org.in		
+
