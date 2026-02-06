@@ -25,8 +25,21 @@ import adminRoutes from './routes/adminRoutes.js';
 // Load environment variables
 dotenv.config();
 
+// Validate required environment variables
+// Note: PORT and NODE_ENV have fallbacks, so we don't strictly require them to prevent breaking local dev or environments relying on defaults.
+const requiredEnvVars = ['MONGODB_URI'];
+const missingEnvVars = requiredEnvVars.filter(envVar => !process.env[envVar]);
+if (missingEnvVars.length > 0) {
+  console.error(`❌ Missing required environment variables: ${missingEnvVars.join(', ')}`);
+  process.exit(1);
+}
+
 // Connect to database
-connectDB();
+// Note: database.js handles its own connection errors, but this catch ensures top-level safety
+connectDB().catch(error => {
+  console.error('❌ Database connection failed:', error.message);
+  process.exit(1);
+});
 
 // Initialize Express app
 const app = express();
@@ -99,7 +112,7 @@ app.use('/api/', limiter);
 
 // Stricter rate limiting for auth/admin routes
 const authLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, 
+  windowMs: 15 * 60 * 1000,
   max: 10, // Limit login attempts
   message: {
     success: false,
@@ -167,13 +180,52 @@ app.use(errorHandler);
  * Server Start
  * =========================================================================
  */
-const PORT = process.env.PORT || 5000;
+const PORT = parseInt(process.env.PORT ?? '5000', 10);
 
-app.listen(PORT, '0.0.0.0', () => {
+const server = app.listen(PORT, '0.0.0.0', () => {
   console.log(`
   🚀 Server is running!
   ---------------------
   📡 URL: http://localhost:${PORT}
   🌍 Env: ${process.env.NODE_ENV || 'development'}
   `);
+});
+
+/**
+ * =========================================================================
+ * Graceful Shutdown Handler
+ * =========================================================================
+ */
+process.on('SIGTERM', () => {
+  console.log('⚠️  SIGTERM signal received: closing HTTP server');
+  server.close(() => {
+    console.log('✅ HTTP server closed');
+    mongoose.disconnect().then(() => {
+      console.log('✅ MongoDB connection closed');
+      process.exit(0);
+    });
+  });
+});
+
+process.on('SIGINT', () => {
+  console.log('⚠️  SIGINT signal received: closing HTTP server');
+  server.close(() => {
+    console.log('✅ HTTP server closed');
+    mongoose.disconnect().then(() => {
+      console.log('✅ MongoDB connection closed');
+      process.exit(0);
+    });
+  });
+});
+
+// Handle uncaught exceptions
+process.on('uncaughtException', (error) => {
+  console.error('❌ Uncaught Exception:', error);
+  process.exit(1);
+});
+
+// Handle unhandled promise rejections
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('❌ Unhandled Rejection at:', promise, 'reason:', reason);
+  process.exit(1);
 });
