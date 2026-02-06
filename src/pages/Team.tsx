@@ -47,14 +47,16 @@ const teamLeads = [
 ];
 
 const teamMembers = [
+  // Row 1
   { name: "Mr. Vedant Rindhe", role: "Member", linkedin: "https://www.linkedin.com/in/vedant-rindhe-8b1034241", email: "rindhevedant@gmail.com" },
   { name: "Mr. Kaushik Barhate", role: "Member", linkedin: "https://www.linkedin.com/in/kaushik-barhate-234b81288", email: "kaushikbarhate@gmail.com" },
   { name: "Mr. Atharva Sathe", role: "Member", linkedin: "https://www.linkedin.com/in/atharva-sathe-157640288", email: "satheatharva105@gmail.com" },
-  { name: "Mr. Vishal Kadam", role: "Member", linkedin: "https://www.linkedin.com/in/vishal-kadam-b47545328", email: "kadampatil9765@gmail.com" },
   { name: "Miss. Nishita Malviya", role: "Member", linkedin: "https://www.linkedin.com/in/nishita-malviya-53a798330", email: "nishitavmalviya14@gmail.com" },
   { name: "Miss. Shraddha Shirole", role: "Member", linkedin: "https://www.linkedin.com/in/shraddha-shirole-28474832a", email: "shraddhashirole24@gmail.com" },
   { name: "Miss. Pranjali Jejurkar", role: "Member", linkedin: "https://www.linkedin.com/in/pranjali-jejurkar-96306732b", email: "pranjalijejurkar26@gmail.com" },
+  // Row 2
   { name: "Miss. Sanika Wakchaure", role: "Member", linkedin: "https://www.linkedin.com/in/sanika-wakchaure-5222733a4", email: "sanikawakchaure04@gmail.com" },
+  { name: "Mr. Vishal Kadam", role: "Member", linkedin: "https://www.linkedin.com/in/vishal-kadam-b47545328", email: "kadampatil9765@gmail.com" },
   { name: "Mr. Saiayush Ugale", role: "Member", linkedin: "https://www.linkedin.com/in/saiayush-ugale-341b2135a", email: "saiayushugale37@gmail.com" },
   { name: "Mr. Pratik Jagtap", role: "Member", linkedin: "https://www.linkedin.com/in/pratik-jagtap-40937832b", email: "pratik002pj@gmail.com" },
   { name: "Mr. Prathamesh Chine", role: "Member", linkedin: "https://www.linkedin.com/in/prathamesh-chine", email: "prathameshchine06@gmail.com" },
@@ -89,7 +91,7 @@ import { usePageTitle } from "@/lib/usePageTitle";
 const heroPattern = "data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E";
 
 const Team = () => {
-  usePageTitle("Our Team", "Meet Team Sanjivani 4.0 - Engineers and innovators from Sanjivani College of Engineering");
+  usePageTitle("Our Team", "Meet SANJIVANI 4.0 - Engineers and innovators from Sanjivani College of Engineering");
 
   return (
     <Layout>
@@ -108,15 +110,15 @@ const Team = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
-          >
-            <motion.span 
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground/90 text-sm font-medium mb-6 border border-primary-foreground/20"
             >
-              Team Sanjivani 4.0
-            </motion.span>
+              <motion.span 
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2 }}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground/90 text-sm font-medium mb-6 border border-primary-foreground/20"
+              >
+                SANJIVANI 4.0
+              </motion.span>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-primary-foreground">
               The People Behind the 
               <span className="text-accent block mt-2"> Innovation</span>
@@ -526,7 +528,7 @@ const Team = () => {
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
               We're always looking for passionate individuals who want to make a difference 
-              in agricultural technology. Join Team Sanjivani 4.0 and be part of something extraordinary!
+              in agricultural technology. Join SANJIVANI 4.0 and be part of something extraordinary!
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="lg" asChild className="text-lg px-8">

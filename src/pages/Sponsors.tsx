@@ -127,7 +127,7 @@ const currentSponsors = [
 const impactStats = [
   { icon: Eye, value: "10K+", label: "Social Media Reach" },
   { icon: Users, value: "500+", label: "Farmers Impacted" },
-  { icon: Award, value: "3+", label: "National Awards" },
+  { icon: Award, value: "2+", label: "National Awards" },
   { icon: TrendingUp, value: "40+", label: "Years of Excellence (College)" },
 ];
 
@@ -153,7 +153,7 @@ const Sponsors = () => {
               Sponsorship Opportunities
             </span>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-primary-foreground">Partner With Team Sanjivani 4.0 to</span> 
+              <span className="text-primary-foreground">Partner With SANJIVANI 4.0 to</span> 
               <span className="text-accent"> Transform Agriculture</span>
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-3xl leading-relaxed">
@@ -179,7 +179,7 @@ const Sponsors = () => {
                 Welcome Message for Sponsors
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                It gives us immense pleasure to present Team Sanjivani 4.0 as we gear up for 
+                It gives us immense pleasure to present SANJIVANI 4.0 as we gear up for 
                 SAE TIFAN 2025-2026. Our journey is not just about building a vehicle — it is 
                 about building innovation, teamwork and the spirit of Engineering excellence.
               </p>
@@ -205,7 +205,7 @@ const Sponsors = () => {
                 Together, we can accelerate innovation, fuel creativity, and drive success.
               </p>
               <p className="text-primary font-semibold mt-4">
-                — Team Sanjivani 4.0, Sanjivani College of Engineering, Kopargaon
+                — SANJIVANI 4.0, Sanjivani College of Engineering, Kopargaon
               </p>
             </div>
           </motion.div>
@@ -251,10 +251,10 @@ const Sponsors = () => {
               Why Sponsor Us?
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Choose Team Sanjivani 4.0
+              Why Choose SANJIVANI 4.0
             </h2>
             <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-              "At Team Sanjivani 4.0, we don't just build vehicles — we build innovation, 
+              "At SANJIVANI 4.0, we don't just build vehicles — we build innovation, 
               teamwork, and impact. By sponsoring us, you become part of a journey that 
               goes beyond competition."
             </p>

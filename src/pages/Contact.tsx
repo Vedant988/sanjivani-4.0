@@ -30,9 +30,18 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "+91 87666 74036",
-    secondaryValue: "Mr. Keshar Shinde",
-    link: "tel:+918766674036",
+    phones: [
+      {
+        label: "Mr. Keshar Shinde",
+        value: "+91 87666 74036",
+        link: "tel:+918766674036",
+      },
+      {
+        label: "Mr. Ritesh Rajput",
+        value: "+91 96576 07191",
+        link: "tel:+919657607191",
+      },
+    ],
   },
   {
     icon: MapPin,
@@ -61,19 +70,25 @@ const teamContacts = [
     name: "Mr. Keshar Shinde",
     role: "Captain",
     phone: "+91 87666 74036",
-    email: null,
+    email: "kesharshindemech111@gmail.com",
+  },
+  {
+    name: "Mr. Ritesh Rajput",
+    role: "Vice Captain",
+    phone: "+91 96576 07191",
+    email: "rajputritesh2053@gmail.com",
   },
   {
     name: "Mr. Omprakash Pawar",
     role: "Sponsorship Coordinator",
     phone: "+91 98349 06320",
-    email: null,
+    email: "pawaromprakash11@gmail.com",
   },
   {
     name: "Mr. Dhruv Inamke",
     role: "Sales & Marketing",
     phone: "+91 97669 46674",
-    email: null,
+    email: "dhruvinamke911@gmail.com",
   },
 ];
 
@@ -165,7 +180,7 @@ const Contact = () => {
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-3xl leading-relaxed">
               Have questions about our products, services, or partnership opportunities? 
-              Team Sanjivani 4.0 would love to hear from you.
+              SANJIVANI 4.0 would love to hear from you.
             </p>
           </motion.div>
         </div>
@@ -207,7 +222,26 @@ const Contact = () => {
                       <h3 className="font-semibold text-foreground mb-1">
                         {info.title}
                       </h3>
-                      {info.link ? (
+
+                      {"phones" in info && Array.isArray((info as any).phones) ? (
+                        <div className="space-y-1">
+                          {(info as any).phones.map(
+                            (phone: { label: string; value: string; link: string }) => (
+                              <div key={phone.value} className="text-sm">
+                                <a
+                                  href={phone.link}
+                                  className="text-muted-foreground hover:text-primary transition-colors"
+                                >
+                                  {phone.value}
+                                </a>
+                                <p className="text-muted-foreground/70 text-xs">
+                                  {phone.label}
+                                </p>
+                              </div>
+                            ),
+                          )}
+                        </div>
+                      ) : info.link ? (
                         <a
                           href={info.link}
                           target={info.title === "Address" ? "_blank" : undefined}
@@ -217,10 +251,16 @@ const Contact = () => {
                           {info.value}
                         </a>
                       ) : (
-                        <p className="text-muted-foreground text-sm">{info.value}</p>
-                      )}
-                      {info.secondaryValue && (
-                        <p className="text-muted-foreground/70 text-xs mt-1">{info.secondaryValue}</p>
+                        <>
+                          {info.value && (
+                            <p className="text-muted-foreground text-sm">{info.value}</p>
+                          )}
+                          {info.secondaryValue && (
+                            <p className="text-muted-foreground/70 text-xs mt-1">
+                              {info.secondaryValue}
+                            </p>
+                          )}
+                        </>
                       )}
                     </div>
                   </motion.div>
@@ -413,35 +453,39 @@ const Contact = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-6xl mx-auto">
             {teamContacts.map((contact, index) => (
               <motion.div
                 key={contact.name}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="p-5 rounded-xl bg-card border border-border text-center hover:shadow-soft transition-shadow"
+                transition={{ delay: index * 0.08 }}
+                className="p-6 rounded-2xl bg-card border border-border text-center hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col items-center h-full"
               >
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
                   <User size={20} className="text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground text-sm mb-1">{contact.name}</h3>
+                <h3 className="font-semibold text-foreground text-sm mb-1">
+                  {contact.name}
+                </h3>
                 <p className="text-accent text-xs font-medium mb-3">{contact.role}</p>
-                <a
-                  href={`tel:${contact.phone.replace(/\s/g, '')}`}
-                  className="text-muted-foreground hover:text-primary text-xs transition-colors block"
-                >
-                  {contact.phone}
-                </a>
-                {contact.email && (
+                <div className="space-y-1 text-xs text-muted-foreground">
                   <a
-                    href={`mailto:${contact.email}`}
-                    className="text-muted-foreground hover:text-primary text-xs transition-colors block mt-1 truncate"
+                    href={`tel:${contact.phone.replace(/\s/g, "")}`}
+                    className="hover:text-primary transition-colors block"
                   >
-                    {contact.email}
+                    {contact.phone}
                   </a>
-                )}
+                  {contact.email && (
+                    <a
+                      href={`mailto:${contact.email}`}
+                      className="hover:text-primary transition-colors block truncate"
+                    >
+                      {contact.email}
+                    </a>
+                  )}
+                </div>
               </motion.div>
             ))}
           </div>

@@ -150,4 +150,4 @@ The backend requires a Node.js environment (AWS EC2, DigitalOcean, Heroku, Rende
 cd server
 npm start
 ```
-Ensure all environment variables are set in the production environment
+Ensure all environment variables are set in the production environment.

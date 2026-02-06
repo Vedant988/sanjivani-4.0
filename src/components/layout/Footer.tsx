@@ -54,9 +54,9 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <img src="/logo.png" srcSet="/logo@2x.png 2x" alt="Team Sanjivani 4.0" className="w-12 h-12 object-contain rounded-xl shadow-glow-accent" />
+              <img src="/logo.png" srcSet="/logo@2x.png 2x" alt="SANJIVANI 4.0" className="w-12 h-12 object-contain rounded-xl shadow-glow-accent" />
               <div>
-                <h2 className="font-display font-bold text-xl text-primary-foreground">Team Sanjivani 4.0</h2>
+                <h2 className="font-display font-bold text-xl text-primary-foreground">SANJIVANI 4.0</h2>
                 <p className="text-sm text-primary-foreground/60">Engineering Innovation</p>
               </div>
             </Link>
@@ -165,7 +165,7 @@ export function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/50 text-sm">
-              © {new Date().getFullYear()} Team Sanjivani 4.0. All rights reserved.
+              © {new Date().getFullYear()} SANJIVANI 4.0. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <Link to="/privacy" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">

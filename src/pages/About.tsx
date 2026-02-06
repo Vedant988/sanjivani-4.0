@@ -15,7 +15,10 @@ import {
   Trophy,
   Calendar,
   Rocket,
-  CheckCircle
+  CheckCircle,
+  Youtube,
+  ExternalLink,
+  Play
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
@@ -129,7 +132,7 @@ const missionPoints = [
 ];
 
 const About = () => {
-  usePageTitle("Teamwork", "About Team Sanjivani 4.0 - Teamwork and College Background");
+  usePageTitle("Teamwork", "About SANJIVANI 4.0 - Teamwork and College Background");
 
   return (
     <Layout>
@@ -154,7 +157,7 @@ const About = () => {
               About Us
             </span>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-primary-foreground">
-              Team Sanjivani 4.0 
+              SANJIVANI 4.0 
               <span className="text-accent"> SAE TIFAN 2025-2026</span>
             </h1>
             <p className="text-xl text-primary-foreground/90 max-w-3xl leading-relaxed mb-8">
@@ -180,7 +183,7 @@ const About = () => {
               <div className="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20">
                 <Trophy size={24} className="text-accent" />
                 <div>
-                  <span className="block text-2xl font-bold text-accent">3+</span>
+                  <span className="block text-2xl font-bold text-accent">2+</span>
                   <span className="text-sm text-primary-foreground/80">National Awards</span>
                 </div>
               </div>
@@ -218,10 +221,10 @@ const About = () => {
                 <Users size={32} className="text-primary-foreground" />
               </div>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-                About Team Sanjivani 4.0
+                About SANJIVANI 4.0
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Team Sanjivani 4.0 is a dynamic team of engineering students from Sanjivani College 
+                 SANJIVANI 4.0 is a dynamic team of engineering students from Sanjivani College 
                 of Engineering, Kopargaon, dedicated to innovation and excellence in agricultural 
                 engineering solutions. The team actively participates in TIFAN competitions, working 
                 on the design and development of an automatic vegetable transplanter aimed at improving 
@@ -282,7 +285,7 @@ const About = () => {
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 "To become pioneers in Automotive Engineering innovation while fostering technical 
-                skills and teamwork among students." At Team Sanjivani 4.0, our vision goes beyond 
+                 skills and teamwork among students." At SANJIVANI 4.0, our vision goes beyond 
                 just building vehicles. We aspire to be leaders in student-driven automotive innovation, 
                 setting benchmarks in design, efficiency, and sustainability. By continuously challenging 
                 ourselves with real-world engineering problems, we cultivate an environment where 
@@ -616,6 +619,132 @@ const About = () => {
               )
             })}
           </div>
+        </div>
+      </section>
+
+      {/* YouTube Channel Section */}
+      <section className="py-24 bg-background relative overflow-hidden">
+        {/* Background Pattern */}
+        <div 
+          className="absolute inset-0 opacity-[0.015]"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23000' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E")`,
+          }}
+          aria-hidden="true"
+        />
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+              <Youtube size={16} />
+              YouTube Channel
+            </span>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+              See Us in Action
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
+              Watch our latest videos showcasing project builds, field tests, team activities, and competition highlights on the SANJIVANI 4.0 YouTube Channel.
+            </p>
+          </motion.div>
+
+          {/* Video Grid */}
+          <div className="grid md:grid-cols-3 gap-6 mb-8 max-w-6xl mx-auto">
+            {[
+              { 
+                id: "is1ilpIq-uA", 
+                url: "https://youtube.com/shorts/is1ilpIq-uA?feature=share",
+                title: "Farmer Review"
+              },
+              { 
+                id: "qA6yZ6JMxMM", 
+                url: "https://youtube.com/shorts/qA6yZ6JMxMM?si=LDjOPuTI4YtD-eBI",
+                title: "Faculty Review"
+              },
+              { 
+                id: "AI6hh-u0N_A", 
+                url: "https://youtube.com/shorts/AI6hh-u0N_A?feature=share",
+                title: "Farmer Review"
+              },
+            ].map((video, index) => (
+              <motion.div
+                key={video.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group relative rounded-2xl bg-card border border-border overflow-hidden hover:border-primary/50 hover:shadow-elevated hover:-translate-y-2 transition-all duration-300"
+              >
+                {/* Video Embed Container */}
+                <div className="relative aspect-[9/16] bg-black overflow-hidden rounded-t-2xl">
+                  <iframe
+                    title={`YouTube Short ${video.title}`}
+                    src={`https://www.youtube.com/embed/${video.id}?modestbranding=1&rel=0&controls=1`}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                  
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  {/* YouTube Badge */}
+                  <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="bg-accent text-accent-foreground px-2 py-1 rounded-md flex items-center gap-1 text-xs font-semibold">
+                      <Youtube size={12} />
+                      YouTube
+                    </div>
+                  </div>
+                </div>
+
+                {/* Video Info */}
+                <div className="p-5 bg-card">
+                  <h3 className="font-display text-lg font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                    {video.title}
+                  </h3>
+                  <a
+                    href={video.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary text-sm font-medium transition-all group/link"
+                  >
+                    <Play size={14} fill="currentColor" />
+                    Watch on YouTube
+                    <ExternalLink size={12} className="group-hover/link:translate-x-0.5 transition-transform" />
+                  </a>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Channel Link Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            className="text-center"
+          >
+            <Button
+              variant="hero"
+              size="lg"
+              asChild
+            >
+              <a
+                href="https://www.youtube.com/@team_sanjivani_4.0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2"
+              >
+                <Youtube size={20} />
+                Visit Our YouTube Channel
+                <ExternalLink size={18} />
+              </a>
+            </Button>
+          </motion.div>
         </div>
       </section>
 

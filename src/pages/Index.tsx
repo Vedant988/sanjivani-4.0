@@ -11,15 +11,23 @@ import {
   Target,
   ChevronRight,
   Play,
-  Trophy,
-  Building2,
-  Sparkles,
-  TrendingUp
+  Trophy
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 import heroImage from "@/Sanjivani 4.0 Images/Sanjivani College Profile.png";
 import YouTubeChannel from "@/components/YouTubeChannel";
+// TIFAN Industry Connect sponsors (homepage section)
+import araiLogo from "@/Industry Sponsors/ARAI.png";
+import magicLogo from "@/Industry Sponsors/MAGIC.png";
+import cumminsLogo from "@/Industry Sponsors/Cummins.png";
+import johnDeereLogo from "@/Industry Sponsors/JOHN DEERE.png";
+import altairLogo from "@/Industry Sponsors/ALTAIR.png";
+import mathworksLogo from "@/Industry Sponsors/Mathworks.png";
+import mahindraLogo from "@/Industry Sponsors/Mahindra Rise.png";
+import trizLogo from "@/Industry Sponsors/TRIZ.png";
+import akshayaAgriLogo from "@/Industry Sponsors/Akshaya Agri.png";
+import bktLogo from "@/Industry Sponsors/BKT.png";
 
 const services = [
   {
@@ -48,7 +56,7 @@ const services = [
   },
   {
     icon: Users,
-    title: "Join the Team",
+    title: "Our Team",
     description: "Be part of our mission to revolutionize farming technology.",
     link: "/team",
     iconBg: "bg-accent/15",
@@ -66,15 +74,15 @@ const achievements = [
     description: "Project Exhibition 2024 (IET Karmaveer Expo'24) for Multi-Vegetable Transplanter",
   },
   {
-    title: "3rd Rank - SAE TIFAN",
-    description: "Outstanding performance in the 1st Round of SAE TIFAN competition",
+    title: "3rd Rank - SAEINDIA TIFAN",
+    description: "Outstanding performance in the 1st Round of SAEINDIA TIFAN competition",
   },
 ];
 
 const stats = [
   { icon: Trophy, value: "1st", label: "All India Rank - Best Innovation", numericValue: 1 },
   { icon: Users, value: "20+", label: "Team Members", numericValue: 20 },
-  { icon: Award, value: "3+", label: "National Awards", numericValue: 3 },
+  { icon: Award, value: "2+", label: "National Awards", numericValue: 2 },
   { icon: Handshake, value: "5+", label: "Industry Partners", numericValue: 5 },
 ];
 
@@ -181,7 +189,7 @@ const StatCounter = ({
 import { usePageTitle } from "@/lib/usePageTitle";
 
 const Index = () => {
-  usePageTitle("Engineering Innovation", "Team Sanjivani 4.0 - Engineering Innovation");
+  usePageTitle("Engineering Innovation", "SANJIVANI 4.0 - Engineering Innovation");
   
   // Parallax scroll for hero background
   const { scrollY } = useScroll();
@@ -199,7 +207,7 @@ const Index = () => {
         <div className="absolute inset-0">
           <motion.img
             src={heroImage}
-            alt="Automated Multi-Vegetable Transplanter by Team Sanjivani 4.0"
+            alt="Automated Multi-Vegetable Transplanter by SANJIVANI 4.0"
             className="w-full h-full object-cover"
             style={{ y: heroY, opacity: heroOpacity }}
             aria-hidden="true"
@@ -227,7 +235,7 @@ const Index = () => {
               transition={{ duration: 0.8 }}
             >
               <span className="inline-flex items-center gap-0 px-4 py-2 rounded-full bg-white/25 text-white border border-white/30 text-sm font-medium mb-6">
-                SAE TIFAN 2025-2026 | Sanjivani College of Engineering
+                SAEINDIA TIFAN | Sanjivani College of Engineering Kopargaon
               </span>
             </motion.div>
 
@@ -237,7 +245,7 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6"
             >
-              Team Sanjivani 4.0
+              SANJIVANI 4.0
               <br />
               <span className="text-accent">Automated Multi-Vegetable</span> Transplanter
             </motion.h1>
@@ -250,7 +258,7 @@ const Index = () => {
             >
               A dedicated group of engineering students driven by innovation, teamwork, 
               and excellence in automotive engineering. We design, build, and test vehicles 
-              for SAE India competitions, applying knowledge in mechanical design, fabrication, 
+              for SAEINDIA competitions, applying knowledge in mechanical design, fabrication, 
               electronics, and project management.
             </motion.p>
 
@@ -397,7 +405,7 @@ const Index = () => {
       {/* About Preview Section */}
       <section 
         className="py-24 bg-hero-gradient text-primary-foreground overflow-hidden relative"
-        aria-label="About Team Sanjivani 4.0"
+        aria-label="About SANJIVANI 4.0"
       >
         {/* Enhanced gradient overlay with pattern */}
         <div 
@@ -415,17 +423,17 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground/80 text-sm font-medium mb-6">
-                About Team Sanjivani 4.0
+                About SANJIVANI 4.0
               </span>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-primary-foreground">
                 Engineering the Future of 
                 <span className="text-accent"> Sustainable Farming</span>
               </h2>
               <p className="text-primary-foreground/90 text-lg leading-relaxed mb-8">
-                Team Sanjivani 4.0 is a dedicated group of engineering students from 
+                SANJIVANI 4.0 is a dedicated group of engineering students from 
                 Sanjivani College of Engineering, Kopargaon, driven by innovation, teamwork, 
                 and excellence in automotive engineering. We design, build, and test vehicles 
-                for SAE Indian competitions.
+                for SAEINDIA competitions.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="p-4 rounded-xl bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 hover:scale-105 transition-transform duration-300">
@@ -508,7 +516,7 @@ const Index = () => {
             className="text-center mb-16"
           >
             <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent/15 text-accent text-sm font-semibold mb-6 border border-accent/20 shadow-sm">
-              Our Partners
+              TIFAN Industry Connect 
             </span>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               Backed by Industry Leaders
@@ -519,43 +527,49 @@ const Index = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mb-12 max-w-6xl mx-auto">
             {[
-              { name: "Dassault Systèmes", icon: Building2, color: "from-blue-500/10 to-blue-600/5", iconColor: "text-blue-600" },
-              { name: "John Deere", icon: TrendingUp, color: "from-green-500/10 to-green-600/5", iconColor: "text-green-600" },
-              { name: "MathWorks", icon: Sparkles, color: "from-purple-500/10 to-purple-600/5", iconColor: "text-purple-600" },
-              { name: "SAE India", icon: Award, color: "from-primary/10 to-primary/5", iconColor: "text-primary" },
+              { name: "Mahindra & Mahindra", logo: mahindraLogo },
+              { name: "John Deere", logo: johnDeereLogo },
+              { name: "ARAI", logo: araiLogo },
+              { name: "MAGIC by CMIA", logo: magicLogo },
+              { name: "Cummins", logo: cumminsLogo },
+              { name: "Altair", logo: altairLogo },
+              { name: "MathWorks", logo: mathworksLogo },
+              { name: "TRIZ Association of Asia", logo: trizLogo },
+              { name: "Akshaya Agri", logo: akshayaAgriLogo },
+              { name: "BKT", logo: bktLogo },
             ].map((sponsor, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scale: 0.9, y: 20 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="group relative"
+                transition={{ delay: index * 0.1 }}
+                className="aspect-[3/2] rounded-xl bg-card border border-border flex flex-col items-center justify-center p-4 hover:border-primary/50 hover:shadow-soft hover:-translate-y-1 transition-all duration-300 group overflow-hidden"
                 role="article"
                 aria-label={`Partner: ${sponsor.name}`}
               >
-                <div className={`aspect-[4/3] rounded-2xl bg-gradient-to-br ${sponsor.color} border-2 border-border hover:border-primary/50 hover:shadow-elevated hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center p-8 relative overflow-hidden`}>
-                  {/* Decorative corner accent */}
-                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary/5 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-accent/5 to-transparent rounded-tr-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  
-                  {/* Icon */}
-                  <div className="w-16 h-16 rounded-full bg-background/80 backdrop-blur-sm border border-border/50 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 group-hover:border-primary/50 transition-all duration-300 shadow-sm">
-                    <sponsor.icon size={32} className={sponsor.iconColor} />
-                  </div>
-                  
-                  {/* Sponsor Name */}
-                  <h3 className="font-display font-bold text-foreground text-center group-hover:text-primary transition-colors text-base md:text-lg leading-tight">
-                    {sponsor.name}
-                  </h3>
-                  
-                  {/* Subtle badge */}
-                  <span className="mt-3 px-3 py-1 rounded-full bg-background/60 backdrop-blur-sm border border-border/30 text-xs font-medium text-muted-foreground group-hover:text-primary group-hover:border-primary/30 transition-colors">
-                    Trusted Partner
-                  </span>
-                </div>
+                {sponsor.logo ? (
+                  <>
+                    <div className="w-full flex-1 flex items-center justify-center mb-2 min-h-0">
+                      <img
+                        src={sponsor.logo}
+                        alt={sponsor.name}
+                        className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                    <h3 className="font-display font-bold text-foreground text-center text-xs sm:text-sm md:text-base group-hover:text-primary transition-colors leading-tight line-clamp-2">
+                      {sponsor.name}
+                    </h3>
+                  </>
+                ) : (
+                  <>
+                    <p className="font-display font-semibold text-foreground text-center text-xs sm:text-sm leading-tight line-clamp-2">
+                      {sponsor.name}
+                    </p>
+                  </>
+                )}
               </motion.div>
             ))}
           </div>

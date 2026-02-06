@@ -20,6 +20,14 @@ import whatsapp6 from '../Gallery/WhatsApp Image 2026-01-10 at 12.52.49 PM (1).j
 import whatsapp7 from '../Gallery/WhatsApp Image 2026-01-10 at 12.52.49 PM.jpeg';
 import whatsapp8 from '../Gallery/WhatsApp Image 2026-01-11 at 18.24.10.jpeg';
 import whatsapp9 from '../Gallery/WhatsApp Image 2026-01-11 at 18.24.18 (1).jpeg';
+import whatsapp2026_1 from '../Gallery/WhatsApp Image 2026-02-06 at 10.23.21 AM (8).jpeg';
+import whatsapp2026_2 from '../Gallery/WhatsApp Image 2026-02-06 at 10.23.42 AM.jpeg';
+import whatsapp2026_3 from '../Gallery/WhatsApp Image 2026-02-06 at 10.24.19 AM (14).jpeg';
+import whatsapp2026_4 from '../Gallery/WhatsApp Image 2026-02-06 at 10.24.19 AM (20).jpeg';
+import whatsapp2026_5 from '../Gallery/WhatsApp Image 2026-02-06 at 10.24.19 AM (21).jpeg';
+import whatsapp2026_6 from '../Gallery/WhatsApp Image 2026-02-06 at 10.24.19 AM (26).jpeg';
+import whatsapp2026_7 from '../Gallery/WhatsApp Image 2026-02-06 at 10.24.19 AM (4).jpeg';
+import whatsapp2026_8 from '../Gallery/WhatsApp Image 2026-02-06 at 10.24.19 AM (6).jpeg';
 
 const categories = ["All", "Workshop", "Testing", "Team", "Events"];
 
@@ -28,7 +36,7 @@ const galleryItems = [
   { id: 2, src: sae2, title: 'SAE Workshop Session', category: 'Workshop' },
   { id: 3, src: sae3, title: 'Testing Phase', category: 'Testing' },
   { id: 4, src: sae5, title: 'SAE Event Moments', category: 'Events' },
-  { id: 5, src: team045, title: 'Team Sanjivani 4.0', category: 'Team' },
+  { id: 5, src: team045, title: 'SANJIVANI 4.0', category: 'Team' },
   { id: 6, src: team048, title: 'Team Collaboration', category: 'Team' },
   { id: 7, src: team054, title: 'Team Achievements', category: 'Team' },
   { id: 8, src: whatsapp1, title: 'Project Showcase', category: 'Events' },
@@ -40,6 +48,15 @@ const galleryItems = [
   { id: 14, src: whatsapp7, title: 'Equipment Setup', category: 'Workshop' },
   { id: 15, src: whatsapp8, title: 'Event Highlights', category: 'Events' },
   { id: 16, src: whatsapp9, title: 'Team Meeting', category: 'Team' },
+  // New 2026 gallery additions
+  { id: 17, src: whatsapp2026_1, title: 'Workshop Discussion', category: 'Workshop' },
+  { id: 18, src: whatsapp2026_2, title: 'Team Gathering', category: 'Team' },
+  { id: 19, src: whatsapp2026_3, title: 'Lab Session', category: 'Workshop' },
+  { id: 20, src: whatsapp2026_4, title: 'Testing Session', category: 'Testing' },
+  { id: 21, src: whatsapp2026_5, title: 'Prototype Review', category: 'Events' },
+  { id: 22, src: whatsapp2026_6, title: 'Assembly Work', category: 'Workshop' },
+  { id: 23, src: whatsapp2026_7, title: 'Hands-on Practice', category: 'Testing' },
+  { id: 24, src: whatsapp2026_8, title: 'Project Demo', category: 'Events' },
 ];
 
 const Gallery = () => {

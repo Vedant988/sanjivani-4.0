@@ -126,7 +126,7 @@ export function Navbar() {
             <Link 
               to="/" 
               className="flex items-center gap-3 group"
-              aria-label="Team Sanjivani 4.0 Home"
+              aria-label="SANJIVANI 4.0 Home"
             >
               <motion.div 
                 className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shadow-soft group-hover:shadow-glow-primary transition-all duration-150"
@@ -136,7 +136,7 @@ export function Navbar() {
                 <img 
                   src="/logo.png" 
                   srcSet="/logo@2x.png 2x" 
-                  alt="Team Sanjivani 4.0" 
+                  alt="SANJIVANI 4.0" 
                   className="w-full h-full object-contain" 
                 />
               </motion.div>
@@ -145,7 +145,7 @@ export function Navbar() {
                   "font-display font-bold text-xl transition-colors",
                   isScrolled ? "text-foreground" : "text-primary-foreground"
                 )}>
-                  Team Sanjivani 4.0
+                  SANJIVANI 4.0
                 </h1>
                 <p className={cn(
                   "text-xs -mt-0.5 transition-colors",

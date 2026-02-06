@@ -11,7 +11,7 @@ type Props = {
 
 const YouTubeChannel: React.FC<Props> = ({
   channelUrl = "https://www.youtube.com/@team_sanjivani_4.0",
-  channelName = "Team Sanjivani 4.0",
+  channelName = "SANJIVANI 4.0",
   videoIds = [],
 }) => {
   const videosToShow = videoIds.slice(0, 4);
